@@ -1,8 +1,8 @@
 # Databricks notebook source
-storage_account_name = "formula1dl"
-client_id            = dbutils.secrets.get(scope="formula1-scope", key="databricks-app-client-id")
-tenant_id            = dbutils.secrets.get(scope="formula1-scope", key="databricks-app-tenant-id")
-client_secret        = dbutils.secrets.get(scope="formula1-scope", key="databricks-app-client-secret")
+storage_account_name = "formula1courseds"
+client_id            = dbutils.secrets.get(scope="formula1-scope", key="formula1-app-client-id")
+tenant_id            = dbutils.secrets.get(scope="formula1-scope", key="formula1-app-tenant-id")
+client_secret        = dbutils.secrets.get(scope="formula1-scope", key="formula1-app-client-secret")
 
 # COMMAND ----------
 
@@ -38,23 +38,20 @@ mount_adls("demo")
 
 # COMMAND ----------
 
-dbutils.fs.unmount("/mnt/formula1dl/demo")
+dbutils.fs.unmount("/mnt/formula1courseds/demo")
 
 # COMMAND ----------
 
-dbutils.fs.ls("/mnt/formula1dl/raw")
+dbutils.fs.ls("/mnt/formula1courseds/raw")
 
 # COMMAND ----------
 
-dbutils.fs.ls("/mnt/formula1dl/processed")
+dbutils.fs.ls("/mnt/formula1courseds/processed")
 
 # COMMAND ----------
 
-dbutils.fs.ls("/mnt/formula1dl/presentation")
+dbutils.fs.ls("/mnt/formula1courseds/presentation")
 
 # COMMAND ----------
 
-dbutils.fs.ls("/mnt/formula1dl/demo")
-
-# COMMAND ----------
-
+dbutils.fs.ls("/mnt/formula1courseds/demo")
