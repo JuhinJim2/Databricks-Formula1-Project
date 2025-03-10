@@ -31,6 +31,3 @@ SELECT team_name,
 GROUP BY team_name
 HAVING COUNT(1) >= 100
 ORDER BY avg_points DESC
-
--- COMMAND ----------
-

@@ -67,6 +67,3 @@ spark.sql(f"""
 
 # MAGIC %sql
 # MAGIC SELECT COUNT(1) FROM f1_presentation.calculated_race_results;
-
-# COMMAND ----------
-

@@ -51,6 +51,3 @@ def merge_delta_data(input_df, db_name, table_name, folder_path, merge_condition
       .execute()
   else:
     input_df.write.mode("overwrite").partitionBy(partition_column).format("delta").saveAsTable(f"{db_name}.{table_name}")
-
-# COMMAND ----------
-

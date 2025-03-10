@@ -87,6 +87,3 @@ merge_delta_data(final_df, 'f1_presentation', 'race_results', presentation_folde
 
 # MAGIC %sql
 # MAGIC SELECT * FROM f1_presentation.race_results;
-
-# COMMAND ----------
-

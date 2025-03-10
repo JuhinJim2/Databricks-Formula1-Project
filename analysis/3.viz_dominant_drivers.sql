@@ -52,6 +52,3 @@ SELECT race_year,
  WHERE driver_name IN (SELECT driver_name FROM v_dominant_drivers WHERE driver_rank <= 10)
 GROUP BY race_year, driver_name
 ORDER BY race_year, avg_points DESC
-
--- COMMAND ----------
-
