@@ -4,7 +4,7 @@
 
 # Project Requirement
 
-    ## Data Ingestion Requirements
+## Data Ingestion Requirements
     * Ingest all files into the Data Lake.
     * Ingested data must have the schema applied.
     * Ingested data must have audit columns.
@@ -12,7 +12,7 @@
     * Must be able to analyze the ingested data via SQL.
     * Ingestion logic must be able to handle incremental load.
 
-    ## Data Transformation Requirements
+## Data Transformation Requirements
     * Join the key information required for reporting to create a new table.
     * Join the key information required for analysis to create a new table.
     * Transformed tables must have audit columns.
@@ -20,23 +20,23 @@
     * Transformed data must be stored in columnar format (i.e., Parquet).
     * Transformation logic must be able to handle incremental load.
 
-    ## Reporting Requirements
+## Reporting Requirements
     * Driver Standings
     * Constructor Standings
 
-    ## Analysis Requirements
+## Analysis Requirements
     * Dominant Drivers
     * Dominant Teams
     * Visualize the outputs
     * Create Databricks Dashboards
 
-    ## Non Functional Requirements
+## Non Functional Requirements
     * Schedule to run every Sunday 10PM.
     * Ability to monitor the pipelines.
     * Ability to re-run fialed pipelines.
     * Ability to set-up alerts on failures.
 
-    ## Other Non-Functional Requirements
+## Other Non-Functional Requirements
     * Ability to delete individual records (To satisfy user privacy laws such as GDPR).
     * Ability to see history and time travel.
     * Ability to roll back to previous version.
