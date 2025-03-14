@@ -2,9 +2,9 @@
 
 # Introduction
 
-An end-to-end data engineering project to create a fully monitored data pipeline which involves designing and implementing a robust system that automates the flow of data from its raw source to insightful reporting and analysis. This pipeline must handle data ingestion and transformation while ensuring data quality, auditing, and compliance with regulatory standards.
+An end-to-end data engineering project creates a fully monitored pipeline using Medallion Architecture to transform and store data in Azure Data Blobs, from raw to processed to presentation formats. Built with Azure Databricks Notebooks for ingestion, processing, and transformation, and orchestrated by Azure Data Factory, the pipeline ensures data quality and compliance.
 
-Additionally, the system should include mechanisms for monitoring the pipeline’s health, enabling real-time tracking, error detection, and recovery. By leveraging scalable cloud technologies, efficient data formats like Parquet to Delta Lake, and powerful tools for orchestration, transformation, and visualization, this project aims to deliver an efficient, reliable, and fully monitored data pipeline capable of supporting both operational needs and strategic decision-making.
+Leveraging scalable cloud technologies, efficient formats like Parquet and Delta Lake, and robust tools for orchestration and visualization, it delivers a reliable and efficient pipeline to support operational and reporting needs.
 
 # Project Requirement
 
@@ -56,7 +56,7 @@ More info about dataset can be found here:
 
 # Architecture
 
-Solution Architecture:
+The solution utilizes Medallion Architecture as it provides a structured, multi-layered approach to progressively improving the quality and reliability of data. By organizing data into distinct layers, it enables incremental improvements in accuracy, making the data more suitable for business intelligence and machine learning applications.
 
 <img src= "Solution Architecture.png">
 
@@ -81,7 +81,7 @@ These architectural solution is heavily based on this Microsoft documentation: h
     3. Similar to the ingested data, the transformed data will initially be in Parquet format.
     4. The data will later be converted into Delta Lake.
 
-# Load
+## Load
 
     1. These notebooks will use data from both the processed and presentation containers.
     2. We then use Databricks notebooks to analyze and load the data to created dashboards to satisfy our analysis requirements.
