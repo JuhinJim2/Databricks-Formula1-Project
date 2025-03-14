@@ -56,6 +56,14 @@ More info about dataset can be found here:
 
 # Architecture
 
+Solution Architecture:
+
+<img src= "Solution Architecture.png">
+
+These architectural solution is heavily based on this Microsoft documentation: https://learn.microsoft.com/en-us/azure/architecture/solution-ideas/articles/azure-databricks-modern-analytics-architecture
+
+<img src= "Solution Architecture - Azure.png">
+
 ## Ingestion
 
     1. Data is ingested through a Databricks Notebook from the Ergast website via a full load (Historical Data) and an incremental load (Weekly Data).
@@ -77,14 +85,5 @@ More info about dataset can be found here:
 
     1. These notebooks will use data from both the processed and presentation containers.
     2. We then use Databricks notebooks to analyze and load the data to created dashboards to satisfy our analysis requirements.
-
-
-Solution Architecture:
-
-<img src= "Solution Architecture.png">
-
-These architectural solution is heavily based on this Microsoft documentation: https://learn.microsoft.com/en-us/azure/architecture/solution-ideas/articles/azure-databricks-modern-analytics-architecture
-
-<img src= "Solution Architecture - Azure.png">
 
 ## Technology Used
