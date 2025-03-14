@@ -1,6 +1,10 @@
-# Formula 1 Motor Racing Data | Azure Databricks and Data Factory End to End Data Engineering
+# Formula 1 Racing Data Pipeline: End-to-End Engineering with Azure Databricks & Data Factory
 
 # Introduction
+
+An end-to-end data engineering project to create a fully monitored data pipeline which involves designing and implementing a robust system that automates the flow of data from its raw source to insightful reporting and analysis. This pipeline must handle data ingestion and transformation while ensuring data quality, auditing, and compliance with regulatory standards.
+
+Additionally, the system should include mechanisms for monitoring the pipeline’s health, enabling real-time tracking, error detection, and recovery. By leveraging scalable cloud technologies, efficient data formats like Parquet to Delta Lake, and powerful tools for orchestration, transformation, and visualization, this project aims to deliver an efficient, reliable, and fully monitored data pipeline capable of supporting both operational needs and strategic decision-making.
 
 # Project Requirement
 
