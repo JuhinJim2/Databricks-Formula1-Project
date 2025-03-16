@@ -98,5 +98,11 @@ These architectural solution is heavily based on this Microsoft documentation: h
 
 # Reporting and Analysis
 
+Sample Analytics and Dahsboarding: 
+
+<img src= "dominant drivers.png">
+
+<img src= "pbi f1 consumption.png">
+
 # Credits
 
