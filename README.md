@@ -1,8 +1,8 @@
-# Formula 1 Racing Data Pipeline: End-to-End Engineering with Azure Databricks & Data Factory
+# Formula 1 Racing Data Pipeline: End-to-End Data Engineering with Azure Databricks & Data Factory
 
 # Introduction
 
-An end-to-end data engineering project creates a fully monitored pipeline using Medallion Architecture to transform and store data in Azure Data Blobs, from raw to processed to presentation formats. Built with Azure Databricks Notebooks for ingestion, processing, and transformation, and orchestrated by Azure Data Factory, the pipeline ensures data quality and compliance.
+An end-to-end data engineering project that creates a fully monitored pipeline using Medallion Architecture to transform and store data in Azure Data Blobs, from raw to processed to presentation formats. Built with Azure Databricks Notebooks for ingestion, processing, and transformation, and orchestrated by Azure Data Factory, the pipeline ensures data quality and compliance.
 
 Leveraging scalable cloud technologies, efficient formats like Parquet and Delta Lake, and robust tools for orchestration and visualization, it delivers a reliable and efficient pipeline to support operational and reporting needs.
 
@@ -67,7 +67,7 @@ These architectural solution is heavily based on this Microsoft documentation: h
 ## Ingestion
 
     1. Data is ingested through a Databricks Notebook from the Ergast website via a full load (Historical Data) and an incremental load (Weekly Data).
-    2. The data is stored in an ADLS container named 'processed.'
+    2. The data is stored in an ADLS container named 'processed'.
     3. Data in this layer will have the schema applied and be stored in a columnar format.
     4. Partitions will be applied where applicable.
     5. Additional information for audit purposes, such as the ingestion date and data source, will be included.
@@ -86,4 +86,17 @@ These architectural solution is heavily based on this Microsoft documentation: h
     1. These notebooks will use data from both the processed and presentation containers.
     2. We then use Databricks notebooks to analyze and load the data to created dashboards to satisfy our analysis requirements.
 
-## Technology Used
+# Technology Used
+
+1. Azure Databricks
+2. Azure Data Factory
+3. Azure Data blobs
+4. Apache Spark
+5. Delta Lake
+6. Azure Key Vault
+7. Power BI
+
+# Reporting and Analysis
+
+# Credits
+
